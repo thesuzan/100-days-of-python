@@ -29,3 +29,9 @@ def car_maker():
             # print(f"old xcor is {car_row_position}")
             car_row_position += car_distance
             # print(f"new xcor is {car_row_position}")
+
+
+def move_car():
+    for car_row in cars:
+        for car in cars[car_row]:
+            car.fd(25)
